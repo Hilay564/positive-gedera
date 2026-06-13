@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>פוזיטיב · הדמיה — תראו איך התמונה שלכם תיראה</title>
+<meta name="description" content="העלו תמונה וראו איך היא תיראה על קנבס, על עץ, במסגרת, כהדפסה קלאסית או כמגנט — אצל פוזיטיב, ויצמן 26 גדרה." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="examples.css" />
+</head>
+<body class="page-examples">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="safelight" aria-hidden="true"></div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><svg viewBox="0 0 40 40"><g class="blades"></g></svg></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav scrolled" id="nav">
+  <a href="index.html" class="brand" aria-label="פוזיטיב, לעמוד הבית">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" class="ap-ring"/><g class="ap-blades"></g></svg>
+    </span>
+    <span class="brand-name">פוזיטיב<em>·</em><span class="brand-sub">גדרה</span></span>
+  </a>
+  <nav class="nav-links" aria-label="ניווט ראשי">
+    <a href="examples.html" class="is-active">דוגמאות</a>
+    <a href="index.html#story">הסיפור</a>
+    <a href="index.html#services">השירותים</a>
+    <a href="index.html#reviews">לקוחות</a>
+    <a href="index.html#visit">לבקר</a>
+  </nav>
+  <a href="https://wa.me/972545888917" class="nav-cta" target="_blank" rel="noopener">שלחו תמונה ב־WhatsApp</a>
+</header>
+
+<main class="viz-page">
+  <header class="viz-head">
+    <p class="section-kicker">הדמיה חיה</p>
+    <h1>תראו איך התמונה שלכם<br>תיראה אצלכם בבית</h1>
+    <p class="viz-lede">העלו תמונה, בחרו מוצר וגודל — ותקבלו הצצה איך זה ייצא. אהבתם? שלחו לנו בלחיצה והכול מוכן לאיסוף.</p>
+  </header>
+
+  <section class="viz">
+    <!-- STAGE -->
+    <div class="viz-stage-wrap">
+      <div class="stage" id="stage" data-product="canvas" style="--ar:1/1; --scale:0.9">
+
+        <!-- CANVAS — hung on a living-room wall, seen from a distance -->
+        <div class="scene scene-canvas">
+          <div class="room">
+            <span class="room-sofa" aria-hidden="true"></span>
+            <span class="room-plant" aria-hidden="true"></span>
+            <div class="wallart art-canvas"><div class="art-img"></div></div>
+          </div>
+        </div>
+
+        <!-- FRAME — framed on the wall -->
+        <div class="scene scene-frame">
+          <div class="room">
+            <span class="room-sofa" aria-hidden="true"></span>
+            <span class="room-plant" aria-hidden="true"></span>
+            <div class="wallart art-frame"><div class="art-img"></div></div>
+          </div>
+        </div>
+
+        <!-- WOOD — real 3D board you can drag to spin 360° -->
+        <div class="scene scene-wood" id="woodScene">
+          <div class="wood3d">
+            <div class="box" id="woodBox">
+              <span class="face front" aria-hidden="true"></span>
+              <span class="face back" aria-hidden="true"></span>
+              <span class="face right" aria-hidden="true"></span>
+              <span class="face left" aria-hidden="true"></span>
+              <span class="face top" aria-hidden="true"></span>
+              <span class="face bottom" aria-hidden="true"></span>
+            </div>
+          </div>
+          <span class="drag-hint">גררו לסובב · 360°</span>
+        </div>
+
+        <!-- PRINT — lying on a desk -->
+        <div class="scene scene-print">
+          <div class="desk">
+            <div class="print-photo"><div class="art-img"></div></div>
+          </div>
+        </div>
+
+        <!-- MAGNET — stuck on the fridge -->
+        <div class="scene scene-magnet">
+          <div class="fridge">
+            <span class="fridge-handle" aria-hidden="true"></span>
+            <span class="fridge-handle lower" aria-hidden="true"></span>
+            <span class="fridge-seam" aria-hidden="true"></span>
+            <span class="mg mg1" aria-hidden="true"></span>
+            <span class="mg mg2" aria-hidden="true"></span>
+            <span class="note" aria-hidden="true"></span>
+            <div class="magnet-photo"><div class="art-img"></div></div>
+          </div>
+        </div>
+
+      </div>
+      <p class="stage-cap" id="stageCap">דוגמה — העלו תמונה משלכם כדי לראות אותה כאן</p>
+    </div>
+
+    <!-- CONTROLS -->
+    <aside class="viz-controls">
+      <!-- upload -->
+      <div class="ctrl">
+        <span class="ctrl-title">1 · התמונה שלכם</span>
+        <label class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*" hidden />
+          <span class="dz-ico" aria-hidden="true"></span>
+          <b>גררו לכאן תמונה</b>
+          <small>או לחצו לבחירה מהמכשיר</small>
+        </label>
+      </div>
+
+      <!-- product -->
+      <div class="ctrl">
+        <span class="ctrl-title">2 · על מה להדפיס</span>
+        <div class="seg" id="products" role="tablist">
+          <button class="seg-btn is-on" data-product="canvas">קנבס</button>
+          <button class="seg-btn" data-product="wood">עץ</button>
+          <button class="seg-btn" data-product="frame">מסגרת</button>
+          <button class="seg-btn" data-product="print">הדפסה</button>
+          <button class="seg-btn" data-product="magnet">מגנט</button>
+        </div>
+        <p class="ctrl-desc" id="productDesc">קנבס מתוח — הקלאסיקה שנראית מעולה על הקיר.</p>
+      </div>
+
+      <!-- size -->
+      <div class="ctrl">
+        <span class="ctrl-title">3 · גודל <small>(לאישור סופי מול החנות)</small></span>
+        <div class="chips" id="sizes">
+          <button class="chip" data-size="10×15">10×15</button>
+          <button class="chip" data-size="13×18">13×18</button>
+          <button class="chip is-on" data-size="20×30">20×30</button>
+          <button class="chip" data-size="30×40">30×40</button>
+          <button class="chip" data-size="40×60">40×60</button>
+          <button class="chip" data-size="50×70">50×70</button>
+        </div>
+        <p class="ctrl-unit">בסנטימטרים · אפשר גם מידה מותאמת אישית</p>
+      </div>
+
+      <!-- summary + CTA -->
+      <div class="ctrl ctrl-order">
+        <div class="order-line">
+          <span>הבחירה שלכם</span>
+          <b id="orderText">קנבס · 20×30 ס״מ</b>
+        </div>
+        <a href="#" class="btn btn-primary magnetic" id="waBtn" target="_blank" rel="noopener">להזמין את זה ב־WhatsApp</a>
+        <a href="tel:+972545888917" class="btn btn-ghost magnetic">או חייגו 054-588-8917</a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- show across all products -->
+  <section class="across">
+    <h2>אותה תמונה — על כל דבר</h2>
+    <p class="across-sub">רוצים לראות הכול ביחד? הנה התמונה שבחרתם, על כל המוצרים.</p>
+    <div class="across-grid" id="acrossGrid">
+      <figure class="ac" data-product="canvas"><div class="ac-mock"><img alt="קנבס" /></div><figcaption>קנבס</figcaption></figure>
+      <figure class="ac" data-product="wood"><div class="ac-mock"><img alt="עץ" /></div><figcaption>עץ</figcaption></figure>
+      <figure class="ac" data-product="frame"><div class="ac-mock"><img alt="מסגרת" /></div><figcaption>מסגרת</figcaption></figure>
+      <figure class="ac" data-product="print"><div class="ac-mock"><img alt="הדפסה" /></div><figcaption>הדפסה קלאסית</figcaption></figure>
+      <figure class="ac" data-product="magnet"><div class="ac-mock"><img alt="מגנט" /></div><figcaption>מגנט</figcaption></figure>
+    </div>
+  </section>
+
+  <p class="viz-note">ההדמיה נועדה להמחשה בלבד. הצבע והגוון הסופיים תלויים בתמונה ובחומר — נשמח לייעץ בחנות 💙</p>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-big" aria-hidden="true">פוזיטיב</div>
+  <div class="footer-row">
+    <a href="index.html" class="brand brand-foot">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" class="ap-ring"/><g class="ap-blades"></g></svg>
+      </span>
+      <span class="brand-name">פוזיטיב<em>·</em><span class="brand-sub">גדרה</span></span>
+    </a>
+    <p class="footer-tag">חנות צילום ודפוס · ויצמן 26, גדרה · <a href="tel:+972545888917" dir="ltr">054-588-8917</a> · <a href="tel:+97288591765" dir="ltr">08-859-1765</a></p>
+    <p class="footer-credit">כל זיכרון ראוי לצאת מהמגירה. <span>© <span id="year"></span> פוזיטיב</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="examples.js"></script>
+</body>
+</html>

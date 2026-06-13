@@ -1,0 +1,5 @@
+# local tooling / not part of the published site
+.claude/
+*.log
+.DS_Store
+Thumbs.db

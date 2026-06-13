@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>פוזיטיב · גדרה — חנות הצילום שבה הזיכרון הופך לחיוב</title>
+<meta name="description" content="פוזיטיב, ויצמן 26 גדרה. פיתוח תמונות, הדפסה בכל הגדלים, תמונות פספורט, המרות דיגיטליות והדפסה על קנבס — עם חיוך, הומור ויחס אישי. ציון איזי 9.3." />
+<meta property="og:title" content="פוזיטיב · גדרה" />
+<meta property="og:description" content="המקום שבו הנגטיב הופך לחיוב. חנות צילום ודפוס בגדרה — אצל אביחי." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- grain + safelight overlays -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="safelight" aria-hidden="true"></div>
+
+<!-- custom aperture cursor -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><g class="blades"></g></svg>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="פוזיטיב, לראש העמוד">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" class="ap-ring"/><g class="ap-blades"></g></svg>
+    </span>
+    <span class="brand-name">פוזיטיב<em>·</em><span class="brand-sub">גדרה</span></span>
+  </a>
+  <nav class="nav-links" aria-label="ניווט ראשי">
+    <a href="examples.html">דוגמאות</a>
+    <a href="#story">הסיפור</a>
+    <a href="#services">השירותים</a>
+    <a href="#reviews">לקוחות</a>
+    <a href="#visit">לבקר</a>
+  </nav>
+  <a href="https://wa.me/972545888917" class="nav-cta" target="_blank" rel="noopener">
+    שלחו תמונה ב־WhatsApp
+  </a>
+</header>
+
+<!-- ===== HERO ===== -->
+<main id="top">
+<section class="hero" id="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow reveal">חנות הצילום של גדרה · פיתוח תמונות מאז ומתמיד · אצל אביחי</p>
+
+    <h1 class="hero-title">
+      <span class="line reveal" data-d="1">כאן הנגטיב</span>
+      <span class="line reveal flip-word" data-d="2">הופך ל<span class="positive-word">פוזיטיב</span></span>
+    </h1>
+
+    <p class="hero-lede reveal" data-d="3">
+      חנות שכונתית קטנה בלב גדרה, שבה מביאים תמונה — ויוצאים עם חיוך.
+      פיתוח, הדפסה בכל גודל, פספורט והמרות — מהר, באיכות, ובמחיר הוגן.
+    </p>
+
+    <div class="hero-cta reveal" data-d="4">
+      <a href="https://wa.me/972545888917" class="btn btn-primary magnetic" target="_blank" rel="noopener">שלחו תמונה ב־WhatsApp</a>
+      <a href="#visit" class="btn btn-ghost magnetic">איך מגיעים אלינו</a>
+    </div>
+
+    <div class="hero-score reveal" data-d="5">
+      <span class="score-num" data-count="9.3">0.0</span>
+      <span class="score-meta">ציון איזי<br><b>143</b> ביקורות אמת בגדרה</span>
+    </div>
+  </div>
+
+  <!-- recreation of the real shopfront lightbox sign -->
+  <figure class="shopsign" aria-label="שלט החנות של פוזיטיב, ויצמן 26 גדרה">
+    <span class="sign-lamp lamp-a" aria-hidden="true"></span>
+    <span class="sign-lamp lamp-b" aria-hidden="true"></span>
+    <div class="sign-frame">
+      <div class="sign-face">
+        <div class="sign-col sign-dev-col">
+          <div class="sign-dev">פיתוח תמונות</div>
+          <div class="sign-samples" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="sign-col sign-logo-col">
+          <span class="sign-splash" aria-hidden="true"></span>
+          <div class="sign-logo">
+            <span class="sign-film" aria-hidden="true"></span>
+            <span class="sign-word">פוזיטיב</span>
+          </div>
+          <div class="sign-phones" dir="ltr">08-859-1765 &nbsp;·&nbsp; 054-588-8917</div>
+        </div>
+      </div>
+    </div>
+    <figcaption>ככה מוצאים אותנו — ויצמן 26, גדרה</figcaption>
+  </figure>
+
+  <a href="#gallery" class="scroll-cue" aria-label="גלילה למטה">
+    <span></span>גללו פנימה
+  </a>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>פיתוח תמונות</span><i>✦</i><span>הדפסה בכל הגודל</span><i>✦</i><span>תמונות פספורט</span><i>✦</i><span>המרות דיגיטליות</span><i>✦</i><span>הדפסה על קנבס</span><i>✦</i><span>יחס אישי וחם</span><i>✦</i>
+    <span>פיתוח תמונות</span><i>✦</i><span>הדפסה בכל הגודל</span><i>✦</i><span>תמונות פספורט</span><i>✦</i><span>המרות דיגיטליות</span><i>✦</i><span>הדפסה על קנבס</span><i>✦</i><span>יחס אישי וחם</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ===== GALLERY / EXAMPLES ===== -->
+<section class="gallery" id="gallery">
+  <div class="gallery-head">
+    <p class="section-kicker reveal">דוגמאות</p>
+    <h2 class="reveal">הזיכרונות שלכם — בדיוק כמו שאתם אוהבים</h2>
+    <p class="gallery-sub reveal">קנבס, הדפסה על עץ, מסגרות, מגנטים ואלבומים — הדפסה קלאסית או מתנה ששמים על הקיר.</p>
+  </div>
+
+  <!-- local placeholder photos (img/) — swap for the shop's real work later -->
+  <div class="products">
+    <figure class="product reveal">
+      <div class="mock mock-canvas"><img loading="lazy" src="img/family.jpg" alt="הדפסה על קנבס — רגע משפחתי" /></div>
+      <figcaption><b>הדפסה על קנבס</b><span>הרגע האהוב, מתוח על הקיר</span></figcaption>
+    </figure>
+    <figure class="product reveal">
+      <div class="mock mock-wood"><img loading="lazy" src="img/couple.jpg" alt="הדפסה על עץ — זוג" /></div>
+      <figcaption><b>הדפסה על עץ</b><span>חמים, טבעי, אחר</span></figcaption>
+    </figure>
+    <figure class="product reveal">
+      <div class="mock mock-frame"><img loading="lazy" src="img/wedding.jpg" alt="תמונה במסגרת — חתונה" /></div>
+      <figcaption><b>תמונה במסגרת</b><span>קלאסי שלא נגמר</span></figcaption>
+    </figure>
+    <figure class="product reveal">
+      <div class="mock mock-stack">
+        <img loading="lazy" src="img/kids.jpg" alt="" />
+        <img loading="lazy" src="img/grandparents.jpg" alt="" />
+        <img loading="lazy" src="img/kiss.jpg" alt="הדפסות קלאסיות" />
+      </div>
+      <figcaption><b>הדפסות קלאסיות</b><span>בכל גודל, תוך דקות</span></figcaption>
+    </figure>
+    <figure class="product reveal">
+      <div class="mock mock-magnets">
+        <img loading="lazy" src="img/family.jpg" alt="" />
+        <img loading="lazy" src="img/kids.jpg" alt="מגנט תמונה" />
+      </div>
+      <figcaption><b>מגנטים למקרר</b><span>זיכרון קטן בכל בוקר</span></figcaption>
+    </figure>
+    <figure class="product reveal">
+      <div class="mock mock-album">
+        <img loading="lazy" src="img/wedding.jpg" alt="" />
+        <img loading="lazy" src="img/couple.jpg" alt="אלבום תמונות" />
+      </div>
+      <figcaption><b>אלבום תמונות</b><span>כל הסיפור בספר אחד</span></figcaption>
+    </figure>
+  </div>
+  <div class="gallery-cta reveal">
+    <a href="examples.html" class="btn btn-primary magnetic">נסו בעצמכם — העלו תמונה ותראו איך זה ייראה</a>
+  </div>
+  <p class="gallery-note reveal">התמונות להמחשה בלבד — בקרוב נחליף אותן בעבודות אמיתיות מהחנות 💙</p>
+</section>
+
+<!-- ===== NEGATIVE → POSITIVE ===== -->
+<section class="concept" id="concept">
+  <div class="concept-head reveal">
+    <h2>העבירו את האצבע. תראו מה קורה.</h2>
+    <p>כל זיכרון מתחיל כנגטיב — הפוך, קר, מסתורי. אצלנו הוא יוצא החוצה כמו שהוא באמת.</p>
+  </div>
+  <!-- local placeholder photos (img/) — swap src for the shop's real photos later -->
+  <div class="filmstrip" id="filmstrip">
+    <div class="frame"><div class="frame-img neg img-1"><img loading="lazy" src="img/family.jpg" alt="דוגמת פיתוח — משפחה" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-2"><img loading="lazy" src="img/wedding.jpg" alt="דוגמת פיתוח — חתונה" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-3"><img loading="lazy" src="img/kids.jpg" alt="דוגמת פיתוח — ילדים" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-4"><img loading="lazy" src="img/grandparents.jpg" alt="דוגמת פיתוח — סבתא ונכד" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-5"><img loading="lazy" src="img/couple.jpg" alt="דוגמת פיתוח — זוג" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-1"><img loading="lazy" src="img/kiss.jpg" alt="דוגמת פיתוח — רגע רומנטי" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-2"><img loading="lazy" src="img/beach.jpg" alt="דוגמת פיתוח — טיול בחוף" /></div><span class="sprockets"></span></div>
+    <div class="frame"><div class="frame-img neg img-3"><img loading="lazy" src="img/kids.jpg" alt="דוגמת פיתוח — ילדים" /></div><span class="sprockets"></span></div>
+  </div>
+  <p class="filmstrip-hint reveal">רחפו על הפריימים כדי לפתח אותם · מנגטיב לצבע</p>
+</section>
+
+<!-- ===== STORY / AVICHAI ===== -->
+<section class="story" id="story">
+  <div class="story-grid">
+    <div class="story-portrait reveal">
+      <div class="portrait-card">
+        <div class="portrait-img"></div>
+        <div class="portrait-tag">
+          <span class="dot"></span> אביחי · בעל הבית
+        </div>
+      </div>
+      <div class="portrait-stamp">EST. גדרה</div>
+    </div>
+
+    <div class="story-text">
+      <p class="section-kicker reveal">הסיפור</p>
+      <h2 class="reveal">חנות קטנה<br>עם אווירה מטורפת</h2>
+      <p class="reveal">
+        אביחי מכיר כל לקוח. מטפל בכמה אנשים במקביל ועדיין מספיק להוציא חיוך לכל אחד.
+        בקיץ הוא עובד יחף — כנראה ככה מתקררים. <b>אף אחד לא יוצא בידיים ריקות</b>, ותמיד עדיף להגיע עם מצב רוח.
+      </p>
+      <blockquote class="reveal">
+        “אחלה מקום. הרגשה של בית. הבעלים מכיר כל לקוח. אף אחד לא יוצא בידיים ריקות —
+        תמיד עדיף להגיע עם מצב רוח.”
+        <cite>— א. ע., לקוח</cite>
+      </blockquote>
+
+      <div class="story-stats">
+        <div class="stat reveal"><b class="count" data-count="143">0</b><span>ביקורות אמת</span></div>
+        <div class="stat reveal"><b class="count" data-count="9.3" data-dec="1">0</b><span>ציון איזי</span></div>
+        <div class="stat reveal"><b>0</b><span>יוצאים בידיים ריקות</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="services-head">
+    <p class="section-kicker reveal">מה עושים כאן</p>
+    <h2 class="reveal">הכול חוץ מהזיכרון —<br>אותו אתם מביאים.</h2>
+  </div>
+
+  <div class="cards">
+    <article class="card reveal" data-num="01">
+      <div class="card-ico" data-ico="print"></div>
+      <h3>פיתוח תמונות</h3>
+      <p>פיתוח מהיר, כמעט און־ליין, באיכות שעושה כבוד לרגע. מחירים טובים, שירות חם.</p>
+    </article>
+    <article class="card reveal" data-num="02">
+      <div class="card-ico" data-ico="sizes"></div>
+      <h3>הדפסה בכל גודל</h3>
+      <p>מ־9×13 הקלאסי ועד פוסטר ענק על הקיר. נעשה סדר בגדלים — ונבחר את המושלם.</p>
+    </article>
+    <article class="card reveal" data-num="03">
+      <div class="card-ico" data-ico="passport"></div>
+      <h3>תמונות פספורט</h3>
+      <p>דרכון, ויזה, רישיון, תעודות — בדיוק במידה הנכונה, ובלי כאב ראש.</p>
+    </article>
+    <article class="card reveal" data-num="04">
+      <div class="card-ico" data-ico="digital"></div>
+      <h3>המרות דיגיטליות</h3>
+      <p>קלטות, סלילים ותמונות ישנות שמחכות במגירה — מצילים אותן אל המסך של היום.</p>
+    </article>
+    <article class="card reveal" data-num="05">
+      <div class="card-ico" data-ico="canvas"></div>
+      <h3>הדפסה על קנבס</h3>
+      <p>הרגע האהוב עליכם הופך ליצירה. קנבס, מסגרת, מתנה שלא שוכחים.</p>
+    </article>
+    <article class="card reveal" data-num="06">
+      <div class="card-ico" data-ico="docs"></div>
+      <h3>דפוס ומסמכים</h3>
+      <p>הדפסות, צילומי מסמכים, פקסים וכל מה שצריך — מתחת לקורת גג אחת.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="reviews-head reveal">
+    <p class="section-kicker">מה אומרים בגדרה</p>
+    <h2>9.3, וכל מילה מאנשים אמיתיים</h2>
+  </div>
+
+  <div class="reviews-row" data-dir="1">
+    <figure class="quote"><p>“אמינות ומקצוענות, עם חיוך והומור. מקום ללא תחרות!”</p><cite>S. H.</cite></figure>
+    <figure class="quote"><p>“ממש און־ליין בפיתוח תמונות. שירות נהדר.”</p><cite>ע. פ.</cite></figure>
+    <figure class="quote"><p>“יחס אישי וחם, שירות מקצועי ומהיר.”</p><cite>י. ק.</cite></figure>
+    <figure class="quote"><p>“חנות קטנה עם אווירה מטורפת. חוויה חיובית לגמרי.”</p><cite>C. R.</cite></figure>
+    <figure class="quote"><p>“מחירים טובים, שירות חם ואדיב. ממליץ מאוד!”</p><cite>י. פ.</cite></figure>
+  </div>
+  <div class="reviews-row" data-dir="-1">
+    <figure class="quote"><p>“אביחי פשוט מקצוען, והשירות מעולה.”</p><cite>ז. ו.</cite></figure>
+    <figure class="quote"><p>“הרגשה של בית. אף אחד לא יוצא בידיים ריקות.”</p><cite>א. ע.</cite></figure>
+    <figure class="quote"><p>“מגוון רחב של מוצרים, בעל חנות נחמד ויעיל.”</p><cite>M. L.</cite></figure>
+    <figure class="quote"><p>“אחלה שירות וכיף להיכנס. על 👍”</p><cite>O. S.</cite></figure>
+    <figure class="quote"><p>“מחיר מנצח, חביבות, מקצועיות. תהיו מכורים.”</p><cite>S. H.</cite></figure>
+  </div>
+</section>
+
+<!-- ===== VISIT ===== -->
+<section class="visit" id="visit">
+  <div class="visit-glow" aria-hidden="true"></div>
+  <div class="visit-grid">
+    <div class="visit-info">
+      <p class="section-kicker reveal">לבקר</p>
+      <h2 class="reveal">בואו עם מצב רוח.<br>על השאר נדאג אנחנו.</h2>
+
+      <ul class="visit-list">
+        <li class="reveal">
+          <span class="vi-ico" data-ico="pin"></span>
+          <div><b>ויצמן 26, גדרה</b><span>המעון החדש שלנו — קל למצוא, קל לחנות</span></div>
+        </li>
+        <li class="reveal">
+          <span class="vi-ico" data-ico="phone"></span>
+          <div>
+            <b><a href="tel:+972545888917" dir="ltr">054-588-8917</a></b>
+            <span>קו נוסף: <a href="tel:+97288591765" dir="ltr">08-859-1765</a> · אפשר לשלוח תמונות ב־WhatsApp</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="vi-ico" data-ico="clock"></span>
+          <div>
+            <b>שעות פעילות</b>
+            <span class="hours">
+              א׳–ה׳ &nbsp;<bdi class="t">08:30–13:30</bdi> &nbsp;·&nbsp; <bdi class="t">16:00–19:30</bdi><br>
+              ו׳ &nbsp;<bdi class="t">08:30–13:00</bdi> &nbsp;·&nbsp; שבת סגור
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="visit-cta reveal">
+        <a href="https://wa.me/972545888917" class="btn btn-primary magnetic" target="_blank" rel="noopener">שליחת תמונה ב־WhatsApp</a>
+        <a href="https://www.waze.com/ul?q=%D7%A4%D7%95%D7%96%D7%99%D7%98%D7%99%D7%91%20%D7%92%D7%93%D7%A8%D7%94&navigate=yes" class="btn btn-ghost magnetic" target="_blank" rel="noopener">ניווט ב־Waze</a>
+      </div>
+    </div>
+
+    <div class="visit-card reveal">
+      <div class="ticket">
+        <div class="ticket-top">
+          <span>פוזיטיב · גדרה</span>
+          <span class="ticket-ap" aria-hidden="true"></span>
+        </div>
+        <div class="ticket-shot"><img loading="lazy" src="img/couple.jpg" alt="דוגמת הדפסה — רגע משפחתי" /></div>
+        <div class="ticket-bottom">
+          <div><small>ISO</small>גדרה 400</div>
+          <div><small>f/</small>אור רך</div>
+          <div><small>EXP</small>מאז ומתמיד</div>
+        </div>
+        <div class="ticket-perf" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-big" aria-hidden="true">פוזיטיב</div>
+  <div class="footer-row">
+    <div class="brand brand-foot">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" class="ap-ring"/><g class="ap-blades"></g></svg>
+      </span>
+      <span class="brand-name">פוזיטיב<em>·</em><span class="brand-sub">גדרה</span></span>
+    </div>
+    <p class="footer-tag">חנות צילום ודפוס · ויצמן 26, גדרה · <a href="tel:+972545888917" dir="ltr">054-588-8917</a> · <a href="tel:+97288591765" dir="ltr">08-859-1765</a></p>
+    <p class="footer-credit">כל זיכרון ראוי לצאת מהמגירה. <span>© <span id="year"></span> פוזיטיב</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
