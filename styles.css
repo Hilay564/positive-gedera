@@ -104,7 +104,7 @@ img{ max-width:100%; display:block; }
 .brand-name em{ color:var(--gold); font-style:normal; }
 .brand-sub{ font-family:var(--sans); font-size:12px; font-weight:600; color:var(--muted); letter-spacing:.14em; }
 
-.nav-links{ display:flex; gap:26px; margin-inline-start:auto; }
+.nav-links{ display:flex; gap:20px; margin-inline-start:auto; }
 .nav-links a{ font-size:15px; font-weight:500; color:var(--ink-soft); position:relative; padding:4px 0; transition:color .25s; }
 .nav-links a::after{ content:""; position:absolute; inset-inline:0 auto; bottom:-2px; height:2px; width:0; background:var(--red); transition:width .3s var(--ease); }
 .nav-links a:hover{ color:var(--red); } .nav-links a:hover::after{ width:100%; }
@@ -115,7 +115,7 @@ img{ max-width:100%; display:block; }
   transition:transform .25s var(--ease), box-shadow .25s, background .25s;
 }
 .nav-cta:hover{ transform:translateY(-2px); background:var(--red-deep); box-shadow:0 12px 28px -10px var(--red); }
-@media (max-width:860px){ .nav-links{ display:none; } }
+@media (max-width:960px){ .nav-links{ display:none; } }
 
 /* =========================================================
    HERO
