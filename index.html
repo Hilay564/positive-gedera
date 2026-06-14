@@ -185,28 +185,24 @@
 <!-- ===== STORY / AVICHAI ===== -->
 <section class="story" id="story">
   <div class="story-grid">
-    <div class="story-portrait reveal">
-      <div class="portrait-card">
-        <div class="portrait-img"></div>
-        <div class="portrait-tag">
-          <span class="dot"></span> אביחי · בעל הבית
-        </div>
-      </div>
-      <div class="portrait-stamp">EST. גדרה</div>
+    <div class="story-photos reveal">
+      <figure class="polaroid p1"><img loading="lazy" src="img/family.jpg" alt="הדפסה — רגע משפחתי" /><figcaption>משפחה</figcaption></figure>
+      <figure class="polaroid p2"><img loading="lazy" src="img/couple.jpg" alt="הדפסה — זוג" /><figcaption>אהבה</figcaption></figure>
+      <figure class="polaroid p3"><img loading="lazy" src="img/kids.jpg" alt="הדפסה — ילדים" /><figcaption>ילדוּת</figcaption></figure>
+      <span class="story-note">אצל אביחי · מאז ומתמיד</span>
     </div>
 
     <div class="story-text">
       <p class="section-kicker reveal">הסיפור</p>
-      <h2 class="reveal">חנות קטנה<br>עם אווירה מטורפת</h2>
+      <h2 class="reveal">חנות קטנה<br>עם אווירה גדולה</h2>
       <p class="reveal">
-        אביחי מכיר כל לקוח. מטפל בכמה אנשים במקביל ועדיין מספיק להוציא חיוך לכל אחד.
-        בקיץ הוא עובד יחף — כנראה ככה מתקררים. <b>אף אחד לא יוצא בידיים ריקות</b>, ותמיד עדיף להגיע עם מצב רוח.
+        אביחי מכיר כל לקוח בשם. הוא מטפל בכמה אנשים במקביל ועדיין מספיק
+        להוציא חיוך לכל אחד — בקיץ אפילו יחף, כי ככה מתקררים.
       </p>
-      <blockquote class="reveal">
-        “אחלה מקום. הרגשה של בית. הבעלים מכיר כל לקוח. אף אחד לא יוצא בידיים ריקות —
-        תמיד עדיף להגיע עם מצב רוח.”
-        <cite>— א. ע., לקוח</cite>
-      </blockquote>
+      <p class="reveal">
+        מביאים תמונה, יושבים רגע, ויוצאים עם משהו שאפשר להחזיק ביד.
+        <b>אף אחד לא יוצא בידיים ריקות</b> — ותמיד עדיף לבוא עם מצב רוח.
+      </p>
 
       <div class="story-stats">
         <div class="stat reveal"><b class="count" data-count="143">0</b><span>ביקורות אמת</span></div>
@@ -262,22 +258,39 @@
 <section class="reviews" id="reviews">
   <div class="reviews-head reveal">
     <p class="section-kicker">מה אומרים בגדרה</p>
-    <h2>9.3, וכל מילה מאנשים אמיתיים</h2>
+    <h2>כל מילה כאן — אמיתית</h2>
+    <div class="reviews-badge">
+      <span class="rb-score">9.3</span>
+      <div class="rb-meta">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <span>מתוך <b>143</b> ביקורות אמיתיות באיזי</span>
+      </div>
+    </div>
   </div>
 
   <div class="reviews-row" data-dir="1">
-    <figure class="quote"><p>“אמינות ומקצוענות, עם חיוך והומור. מקום ללא תחרות!”</p><cite>S. H.</cite></figure>
-    <figure class="quote"><p>“ממש און־ליין בפיתוח תמונות. שירות נהדר.”</p><cite>ע. פ.</cite></figure>
-    <figure class="quote"><p>“יחס אישי וחם, שירות מקצועי ומהיר.”</p><cite>י. ק.</cite></figure>
-    <figure class="quote"><p>“חנות קטנה עם אווירה מטורפת. חוויה חיובית לגמרי.”</p><cite>C. R.</cite></figure>
-    <figure class="quote"><p>“מחירים טובים, שירות חם ואדיב. ממליץ מאוד!”</p><cite>י. פ.</cite></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“אמינות ומקצוענות, עם חיוך והומור. מקום ללא תחרות!”</p><div class="quote-by"><span class="avatar" data-c="1">S</span><cite>S. H.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“ממש און־ליין בפיתוח תמונות. שירות נהדר.”</p><div class="quote-by"><span class="avatar" data-c="2">ע</span><cite>ע. פ.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“יחס אישי וחם, שירות מקצועי ומהיר.”</p><div class="quote-by"><span class="avatar" data-c="3">י</span><cite>י. ק.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“חנות קטנה עם אווירה מטורפת. חוויה חיובית לגמרי.”</p><div class="quote-by"><span class="avatar" data-c="4">C</span><cite>C. R.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“מחירים טובים, שירות חם ואדיב. ממליץ מאוד!”</p><div class="quote-by"><span class="avatar" data-c="5">י</span><cite>י. פ.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“אמינות ומקצוענות, עם חיוך והומור. מקום ללא תחרות!”</p><div class="quote-by"><span class="avatar" data-c="1">S</span><cite>S. H.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“ממש און־ליין בפיתוח תמונות. שירות נהדר.”</p><div class="quote-by"><span class="avatar" data-c="2">ע</span><cite>ע. פ.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“יחס אישי וחם, שירות מקצועי ומהיר.”</p><div class="quote-by"><span class="avatar" data-c="3">י</span><cite>י. ק.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“חנות קטנה עם אווירה מטורפת. חוויה חיובית לגמרי.”</p><div class="quote-by"><span class="avatar" data-c="4">C</span><cite>C. R.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“מחירים טובים, שירות חם ואדיב. ממליץ מאוד!”</p><div class="quote-by"><span class="avatar" data-c="5">י</span><cite>י. פ.</cite></div></figure>
   </div>
   <div class="reviews-row" data-dir="-1">
-    <figure class="quote"><p>“אביחי פשוט מקצוען, והשירות מעולה.”</p><cite>ז. ו.</cite></figure>
-    <figure class="quote"><p>“הרגשה של בית. אף אחד לא יוצא בידיים ריקות.”</p><cite>א. ע.</cite></figure>
-    <figure class="quote"><p>“מגוון רחב של מוצרים, בעל חנות נחמד ויעיל.”</p><cite>M. L.</cite></figure>
-    <figure class="quote"><p>“אחלה שירות וכיף להיכנס. על 👍”</p><cite>O. S.</cite></figure>
-    <figure class="quote"><p>“מחיר מנצח, חביבות, מקצועיות. תהיו מכורים.”</p><cite>S. H.</cite></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“אביחי פשוט מקצוען, והשירות מעולה.”</p><div class="quote-by"><span class="avatar" data-c="6">ז</span><cite>ז. ו.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“בעל הבית נותן שירות מעולה ומעלה חיוך על הפנים.”</p><div class="quote-by"><span class="avatar" data-c="7">ק</span><cite>ק. א.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“מגוון רחב של מוצרים, בעל חנות נחמד ויעיל.”</p><div class="quote-by"><span class="avatar" data-c="8">M</span><cite>M. L.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“אחלה שירות וכיף להיכנס. ממליץ בחום!”</p><div class="quote-by"><span class="avatar" data-c="1">O</span><cite>O. S.</cite></div></figure>
+    <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“מחיר מנצח, חביבות, מקצועיות. תהיו מכורים.”</p><div class="quote-by"><span class="avatar" data-c="2">S</span><cite>S. H.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“אביחי פשוט מקצוען, והשירות מעולה.”</p><div class="quote-by"><span class="avatar" data-c="6">ז</span><cite>ז. ו.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“בעל הבית נותן שירות מעולה ומעלה חיוך על הפנים.”</p><div class="quote-by"><span class="avatar" data-c="7">ק</span><cite>ק. א.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“מגוון רחב של מוצרים, בעל חנות נחמד ויעיל.”</p><div class="quote-by"><span class="avatar" data-c="8">M</span><cite>M. L.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“אחלה שירות וכיף להיכנס. ממליץ בחום!”</p><div class="quote-by"><span class="avatar" data-c="1">O</span><cite>O. S.</cite></div></figure>
+    <figure class="quote" aria-hidden="true"><div class="stars">★★★★★</div><p>“מחיר מנצח, חביבות, מקצועיות. תהיו מכורים.”</p><div class="quote-by"><span class="avatar" data-c="2">S</span><cite>S. H.</cite></div></figure>
   </div>
 </section>
 
